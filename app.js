@@ -20,14 +20,17 @@ io.on('connection', function(socket){
 });
 
 io.on('connection', function(socket){
-  socket.on('chat message', function(msg){
-    console.log('message: ' + msg); 
+  socket.on('chat message', function(data){
+    console.log('name: ' + data.name); 
+    console.log('message: ' + data.msg); 
+    console.log('-----------'); 
+
   });
 });
 
 io.on('connection', function(socket){
-  socket.on('chat message', function(msg){
-    io.emit('chat message', msg);
+  socket.on('chat message', function(data){
+    io.emit('chat message', data);
   });
 });
 
