@@ -1,0 +1,22 @@
+{
+  "name": "chat_app",
+  "version": "1.0.0",
+  "description": "Chat application build with NodeJS, Express Framework, Socket.io,Mysql database.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiennvn/chat_app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tiennvn/chat_app/issues"
+  },
+  "homepage": "https://github.com/tiennvn/chat_app#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
