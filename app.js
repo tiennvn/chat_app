@@ -25,6 +25,12 @@ io.on('connection', function(socket){
   });
 });
 
+io.on('connection', function(socket){
+  socket.on('chat message', function(msg){
+    io.emit('chat message', msg);
+  });
+});
+
 http.listen(port, () => {
   console.log(`Chating application listening at http://localhost:${port}`);
 });
