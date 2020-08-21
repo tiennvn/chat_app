@@ -4,6 +4,7 @@
   "description": "Chat application build with NodeJS, Express Framework, Socket.io,Mysql database.",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon --inspect app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
