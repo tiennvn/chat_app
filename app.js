@@ -20,7 +20,7 @@ io.on('connection', function(socket){
 });
 
 io.on('connection', function(socket){
-  socket.on('chat message', function(data){
+  socket.on('chat_message', function(data){
     console.log('name: ' + data.name); 
     console.log('message: ' + data.msg); 
     console.log('-----------'); 
@@ -29,8 +29,8 @@ io.on('connection', function(socket){
 });
 
 io.on('connection', function(socket){
-  socket.on('chat message', function(data){
-    io.emit('chat message', data);
+  socket.on('chat_message', function(data){
+    io.emit('chat_message', data);
   });
 });
 

@@ -78,14 +78,14 @@
         $("form").submit(function (data) {
         data.name = localStorage.getItem("name");
         data.msg= $("#content").val();
-        socket.emit("chat message", data);
+        socket.emit("chat_message", data);
         // socket.emit("name", localStorage.getItem("name"));
 
           $("#content").val("");
           return false;
         });
 
-        socket.on("chat message", function (data) {
+        socket.on("chat_message", function (data) {
           $("#messages").append(
             '<li><FONT COLOR="red">' + data.name + ':</FONT> ' + data.msg + '</li>'
           );
