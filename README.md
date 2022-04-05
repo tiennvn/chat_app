@@ -1,6 +1,7 @@
 # chat_app
-Chat application build with NodeJS, Express Framework, Socket.io,Mysql database.
+Chat application build with NodeJS, Express Framework, Socket.io.
 # Demo
-![alt](https://raw.githubusercontent.com/tiennvn/chat_app/master/Demo.PNG)
 # How to run
 Run command in root directory: npm start
+# Open on browser
+Link: http://localhost:3000/
